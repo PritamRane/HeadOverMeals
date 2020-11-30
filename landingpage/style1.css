@@ -1,0 +1,65 @@
+@import url(//fonts.googleapis.com/css?family=Yesteryear);
+ html, body {
+	 width: 100%;
+	 height: 100%;
+}
+ .scene {
+	 font: 100px Yesteryear, Futura, Helvetica, sans-serif;
+	 height: 100%;
+	 perspective: 800px;
+	 perspective-origin: 50% 50%;
+	 transform-style: preserve-3d;
+}
+ .layer {
+	 width: 100%;
+	 height: 100%;
+	 position: absolute;
+	 transform-style: preserve-3d;
+}
+ .layer::after {
+	 content: 'HeadOverMeals';
+	 white-space: pre;
+	 text-align: center;
+	 height: 100%;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+	 color: #ddd;
+	 text-shadow: -1px -1px 1px rgba(255, 255, 255, 1), 1px 1px 3px rgba(0, 0, 0, .2), 1px 2px 3px rgba(0, 0, 0, .1);
+	 letter-spacing: -1px;
+}
+ .layer:nth-child(1):after {
+	 transform: translateZ(0px);
+}
+ .layer:nth-child(2):after {
+	 transform: translateZ(-3px);
+}
+ .layer:nth-child(3):after {
+	 transform: translateZ(-6px);
+}
+ .layer:nth-child(4):after {
+	 transform: translateZ(-9px);
+}
+ .layer:nth-child(5):after {
+	 transform: translateZ(-12px);
+}
+ .layer:nth-child(6):after {
+	 transform: translateZ(-15px);
+}
+ .layer:nth-child(7):after {
+	 transform: translateZ(-18px);
+}
+ .layer:nth-child(8):after {
+	 transform: translateZ(-21px);
+}
+ .layer:nth-child(9):after {
+	 transform: translateZ(-24px);
+}
+ .layer:first-child::after {
+	 color: #eee;
+	 text-shadow: -1px -1px 1px rgba(255, 255, 255, 1), 8px 8px 5px rgba(0, 0, 0, .03), 9px 9px 5px rgba(0, 0, 0, .03), 10px 10px 5px rgba(0, 0, 0, .03), 11px 11px 5px rgba(0, 0, 0, .03), 12px 12px 5px rgba(0, 0, 0, .03), 13px 13px 5px rgba(0, 0, 0, .03), 14px 14px 5px rgba(0, 0, 0, .03), 15px 15px 5px rgba(0, 0, 0, .03), 16px 16px 10px rgba(0, 0, 0, .03);
+}
+ .layer:last-child::after {
+	 text-shadow: 1px 1px 0 rgba(0, 0, 0, .3), 1px 2px 1px rgba(0, 0, 0, .3), 2px 4px 1px rgba(0, 0, 0, .3), 3px 6px 1px rgba(0, 0, 0, .2), 4px 8px 1px rgba(0, 0, 0, .2), 5px 10px 1px rgba(0, 0, 0, .2), 6px 12px 1px rgba(0, 0, 0, .2), 7px 14px 5px rgba(0, 0, 0, .2), 8px 16px 5px rgba(0, 0, 0, .1), 9px 18px 10px rgba(0, 0, 0, .1), 9px 18px 20px rgba(0, 0, 0, .5);
+}
+ 
